@@ -1,0 +1,55 @@
+"use client";
+import React, { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import Loader from '../components/Loader/Loader'; 
+import { BackgroundLinesDemo } from '@/components/BackgroundLines/BackgrounLinesComb';
+import { FloatingNavDemo } from '@/components/Navbar/floatnavbarcomb';
+import { TimelineDemo } from '@/components/Timeline/timelinecomb';
+import { TimelineDemores } from '@/components/Timeline/timelinecombresponsive';
+
+
+
+interface FadeUpComponentProps {
+  children: React.ReactNode;
+}
+const FadeUpComponent: React.FC<FadeUpComponentProps> = ({ children }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-opacity duration-1000 transform ${
+        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
+
+export default function Page() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  return (
+    <div className="">
+      <BackgroundLinesDemo/>
+      <FloatingNavDemo/>
+      <TimelineDemores/>
+    </div>
+  );
+}
