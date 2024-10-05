@@ -9,9 +9,8 @@ export function BackgroundLinesDemo() {
       <h2 className="bg-clip-text text-transparent flex justfiy-center align-middle items-center text-center bg-gradient-to-b  from-neutral-600 to-white text-8xl max-500:text-6xl  font-sans py-10 relative z-20 font-bold tracking-tight">
         Welcome to, <br /> Caliber Tech.
       </h2>
-      <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-400 text-center">
-        Get the best advices from our experts, including expert artists,
-        painters, marathon enthusiasts and RDX, totally free.
+      <p className="max-w-2xl mx-auto text-sm md:text-lg text-neutral-400 text-center">
+      Caliber Tech is a dynamic startup specializing in building customized web applications tailored to our clients' needs. Scroll to explore more.
       </p>
     </BackgroundLines>
   );
