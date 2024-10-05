@@ -28,6 +28,7 @@ const config: Config = {
         'max-400': { 'max': '400px' },
         'max-500': { 'max': '500px' },
         'max-750': { 'max': '750px' },
+        'max-767': { 'max': '767px' },
         'max-1100': { 'max': '1100px' },
       },
       backgroundImage: {
