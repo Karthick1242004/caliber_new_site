@@ -6,6 +6,7 @@ import { BackgroundLinesDemo } from '@/components/BackgroundLines/BackgrounLines
 import { FloatingNavDemo } from '@/components/Navbar/floatnavbarcomb';
 import { TimelineDemo } from '@/components/Timeline/timelinecomb';
 import { TimelineDemores } from '@/components/Timeline/timelinecombresponsive';
+import { FlipWordsDemo } from '@/components/Fliptext/Fliptextcomb';
 
 
 
@@ -50,6 +51,7 @@ export default function Page() {
       <BackgroundLinesDemo/>
       <FloatingNavDemo/>
       <TimelineDemores/>
+      <FlipWordsDemo/>
     </div>
   );
 }
