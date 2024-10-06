@@ -19,7 +19,7 @@ interface FadeUpComponentProps {
 const FadeUpComponent: React.FC<FadeUpComponentProps> = ({ children }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   return (
@@ -36,13 +36,10 @@ const FadeUpComponent: React.FC<FadeUpComponentProps> = ({ children }) => {
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
-
-  // Use effect to simulate loading
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4800); // Loader will be active for 2.5 seconds
-
+    }, 4600); 
     return () => clearTimeout(timer);
   }, []);
 
@@ -52,11 +49,21 @@ export default function Page() {
 
   return (
     <div>
+      <FadeUpComponent>
       <BackgroundLinesDemo />
+      </FadeUpComponent>
       <FloatingNavDemo />
+      <FadeUpComponent>
       <TimelineDemores />
+      </FadeUpComponent>
+      <FadeUpComponent>
       <FlipWordsDemo />
+      </FadeUpComponent>
+      
+      <FadeUpComponent>
       <MacbookScrollDemo />
+      </FadeUpComponent>
+      <FadeUpComponent>
       <div className="text-center pt-20 pb-10">
         <h1 className="text-5xl metallic-text font-bold">Our Pricings</h1>
         <div className="flex flex-row justify-center align-middle py-20 flex-wrap px-[15%] max-767:gap-5 max-1151:gap-5 max-767:px-4">
@@ -65,7 +72,10 @@ export default function Page() {
           <FollowingPointerDemo />
         </div>
       </div>
+      </FadeUpComponent>
+      <FadeUpComponent>
       <GoogleGeminiEffectDemo />
+      </FadeUpComponent>
     </div>
   );
 }
