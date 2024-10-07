@@ -8,9 +8,10 @@ import { TimelineDemo } from "@/components/Timeline/timelinecomb";
 import { TimelineDemores } from "@/components/Timeline/timelinecombresponsive";
 import { FlipWordsDemo } from "@/components/Fliptext/Fliptextcomb";
 import { MacbookScrollDemo } from "@/components/Macbook/macbookcomb";
-import { FollowingPointerDemo } from "@/components/Payment/Paymentcomb";
+import { FollowingPointerDemo } from "@/components/Services/Paymentcomb";
 import GoogleGeminiEffectDemo from "@/components/Googlescroll/geminicomb";
 import "./globals.css";
+import { LinkPreviewDemo } from "@/components/Linkpreview/Linkcomb";
 
 interface FadeUpComponentProps {
   children: React.ReactNode;
@@ -65,7 +66,7 @@ export default function Page() {
       </FadeUpComponent>
       <FadeUpComponent>
       <div className="text-center pt-20 pb-10">
-        <h1 className="text-5xl metallic-text font-bold">Our Pricings</h1>
+        <h1 className="text-5xl metallic-text font-bold">Our Services</h1>
         <div className="flex flex-row justify-center align-middle py-20 flex-wrap px-[15%] max-767:gap-5 max-1151:gap-5 max-767:px-4">
           <FollowingPointerDemo />
           <FollowingPointerDemo />
@@ -75,6 +76,9 @@ export default function Page() {
       </FadeUpComponent>
       <FadeUpComponent>
       <GoogleGeminiEffectDemo />
+      </FadeUpComponent>
+      <FadeUpComponent>
+      <LinkPreviewDemo/>
       </FadeUpComponent>
     </div>
   );
