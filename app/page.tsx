@@ -87,7 +87,7 @@ export default function Page() {
       </FadeUpComponent>
       <FadeUpComponent>
       <div className="mt-[5%] pb-[30px]">
-      <p className="metallic-text text-center text-sm">Built by <Link href='https://calibertech.vercel.app/' className="text-blue-500">@calibertech</Link></p>
+      <p className="metallic-text text-center text-sm">Built and maintained by - <Link href='https://calibertech.vercel.app/' className="text-blue-500"> @calibertech</Link></p>
       </div>
       </FadeUpComponent>
     </div>
