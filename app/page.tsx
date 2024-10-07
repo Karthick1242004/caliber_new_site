@@ -10,8 +10,10 @@ import { FlipWordsDemo } from "@/components/Fliptext/Fliptextcomb";
 import { MacbookScrollDemo } from "@/components/Macbook/macbookcomb";
 import { FollowingPointerDemo } from "@/components/Services/Paymentcomb";
 import GoogleGeminiEffectDemo from "@/components/Googlescroll/geminicomb";
+import Footer from '../components/Footer/Footer'
 import "./globals.css";
 import { LinkPreviewDemo } from "@/components/Linkpreview/Linkcomb";
+import Link from "next/link";
 
 interface FadeUpComponentProps {
   children: React.ReactNode;
@@ -40,7 +42,7 @@ export default function Page() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4600); 
+    }, 4750); 
     return () => clearTimeout(timer);
   }, []);
 
@@ -79,6 +81,14 @@ export default function Page() {
       </FadeUpComponent>
       <FadeUpComponent>
       <LinkPreviewDemo/>
+      </FadeUpComponent>
+      <FadeUpComponent>
+        <Footer/>
+      </FadeUpComponent>
+      <FadeUpComponent>
+      <div className="mt-[5%] pb-[30px]">
+      <p className="metallic-text text-center text-sm">Built by <Link href='https://calibertech.vercel.app/' className="text-blue-500">@calibertech</Link></p>
+      </div>
       </FadeUpComponent>
     </div>
   );
