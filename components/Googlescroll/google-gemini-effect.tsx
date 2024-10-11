@@ -23,15 +23,15 @@ export const GoogleGeminiEffect = ({
   return (
     <div className={cn("sticky top-20", className)}>
       <p className="px-[5%] metallic-text text-4xl md:text-7xl font-medium pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
-        {title || `Building Caliber Tech `}
+        {title || `Build your ideas`}
       </p>
       <p className="text-xs md:text-[13px] font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto">
         {description ||
-          `Caliber Tech is a dynamic startup specializing in building customized web applications tailored to our clients' needs. We not only develop these applications based on customer inputs but also provide comprehensive technical support and maintenance throughout the entire lifecycle of the application. For more information, please visit our website.`}
+          `We are a dynamic startup specializing in building customized web applications tailored to our clients' needs. We not only develop these applications based on customer inputs but also provide comprehensive technical support and maintenance throughout the entire lifecycle of the application. For more information, please visit our website.`}
       </p>
       <div className="w-full h-[890px] mt-[16px] -top-40 md:-top-40 max-450:-mt-[5px] flex items-center justify-center bg-red-transparent absolute">
-  <Link href='https://calibertech.netlify.app/' className="font-bold bg-white rounded-full md:px-4 md:py-4 px-3 py-3 md:mt-24 mt-8 z-30 md:text-base text-black text-xs w-fit mx-auto">
-    calibertech.netlify.app
+  <Link href='https://calibertech.vercel.app/' className="font-bold bg-white rounded-full md:px-4 md:py-4 px-3 py-3 md:mt-24 mt-8 z-30 md:text-base text-black text-xs w-fit mx-auto">
+    calibertech.vercel.app
   </Link>
 </div>
       <svg

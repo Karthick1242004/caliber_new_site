@@ -12,10 +12,6 @@ import jass from '../images/jass.png';
 import insta from '../images/insta.png';
 import visionpro from '../images/visionpro.png';
 import google from '../images/google.png';
-import caliber from '../images/caliber.png';
-import airmagic from '../images/airmagic.png';
-import iphone from '../images/iphone.png';
-import smart from '../images/smart.png';
 import cloud from '../images/cloud.png';
 
 export function TimelineDemores() {
@@ -25,7 +21,7 @@ export function TimelineDemores() {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            Recently in 2024 we started working on 3D interactive websites in Caliber Tech
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -65,12 +61,7 @@ export function TimelineDemores() {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
-          </p>
-          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+            In 2023 we worked on academic , freelance as well as skill imporving projects like clone websites to get a better understanding in both frontend and backend
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -106,28 +97,23 @@ export function TimelineDemores() {
       ),
     },
     {
-      title: "Changelog",
+      title: "Our Journey",
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+            Deployed and made it available in less than a week
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
+              ✅ No charges for Hosting in free hosting service providers
             </div>
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
+              ✅ Charges vary based on paid hosting platforms like AWS etc
             </div>
             <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
+              ✅ Maintaining services are provided for websites in different payment plans
             </div>
-            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
-            </div>
+           
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image

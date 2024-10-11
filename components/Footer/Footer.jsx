@@ -18,6 +18,14 @@ function Footer() {
      <p>Karan M</p>
      </div>
      </div>
+     <div className='flex flex-col gap-5 max-767:text-center'>
+     <h1 className='metallic-text text-2xl font-semibold max-767:text-center'>Contact Us  </h1>
+     <div className='flex flex-col gap-3 metallic-text text-sm'>
+     <p>karthick1242004@gmail.com</p>
+     <p>kamal452jk@gmail.com</p>
+     <p>Karanm17ab@gmail.com</p>
+     </div>
+     </div>
       <div className='flex flex-col gap-4 metallic-text max-767:text-center max-767:text-xl'>
         <Link href='/'>Home</Link>
         <Link href='/'>Pricing</Link>
