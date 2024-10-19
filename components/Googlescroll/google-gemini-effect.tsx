@@ -74,7 +74,7 @@ export const GoogleGeminiEffect = ({
           fill="none"
           initial={{
             pathLength: 0,
-          }}
+          }}  
           style={{
             pathLength: pathLengths[2],
           }}
