@@ -1,7 +1,1 @@
-{
-  "/users/payment/page": "app/users/payment/page.js",
-  "/api/create-order/route": "app/api/create-order/route.js",
-  "/users/componentsPage/page": "app/users/componentsPage/page.js",
-  "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
-}
+{}
