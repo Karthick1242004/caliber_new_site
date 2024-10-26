@@ -11,8 +11,6 @@ import Footer from "@/components/Footer/Footer";
 
 export default function Page() {
   const [filteredProjects, setFilteredProjects] = useState(cardData);
-
-  // Function to handle input change
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const searchTerm = e.target.value.toLowerCase();
     const filtered = cardData.filter((project) =>
@@ -20,8 +18,6 @@ export default function Page() {
     );
     setFilteredProjects(filtered);
   };
-
-  // Function to handle form submission
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("submitted");
@@ -30,8 +26,10 @@ export default function Page() {
   return (
     <div>
       <FloatingNavDemo />
+      <div className="mt-[-7%]">
       <PlaceholdersAndVanishInputDemo onChange={handleChange} onSubmit={onSubmit} />
-      <div className="flex flex-row flex-wrap justify-center gap-[2%] px-[3%] projects-section">
+      </div>
+      <div className="flex flex-row flex-wrap justify-center gap-[2%] px-[3%] projects-section mt-[-10%]">
         {filteredProjects.map((card, index) => (
           <CardContainer key={index} className="inter-var">
             <CardBody className="bg-black relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.1] border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
@@ -67,10 +65,10 @@ export default function Page() {
                   target="__blank"
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white metallic-text"
                 >
-                  Try Now →
+                  Live Demo →
                 </CardItem>
                 <Link
-                  href='/users/componentsPage'
+                  href='/users/payment'
                   target="__blank"
                   className="px-4 py-2 rounded-xl bg-white dark:bg-white dark:text-black text-black text-xs font-bold"
                 >
