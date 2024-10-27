@@ -4,7 +4,6 @@ import { useInView } from "react-intersection-observer";
 import { MultiStepLoaderDemo } from "../components/Loader/Loader"; 
 import { BackgroundLinesDemo } from "@/components/BackgroundLines/BackgrounLinesComb";
 import { FloatingNavDemo } from "@/components/Navbar/floatnavbarcomb";
-import { TimelineDemo } from "@/components/Timeline/timelinecomb";
 import { TimelineDemores } from "@/components/Timeline/timelinecombresponsive";
 import { FlipWordsDemo } from "@/components/Fliptext/Fliptextcomb";
 import { MacbookScrollDemo } from "@/components/Macbook/macbookcomb";
