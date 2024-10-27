@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { FloatingNavDemo } from "@/components/Navbar/floatnavbarcomb";
 
-export function BentoGridThirdDemo() {
+export default function BentoGridThirdDemo() {
   return (
     <div className="flex flex-col justify-center mt-[8%] px-[5%]">
     <FloatingNavDemo/>
@@ -360,4 +360,3 @@ const items = [
   },
 ];
 
-export default BentoGridThirdDemo
