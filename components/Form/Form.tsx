@@ -12,7 +12,8 @@ export function SignupFormDemo({ handlePayment, isProcessing }: { handlePayment:
   };
 
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-slate-1000 border-slate-100">
+    <div className="max-w-md w-full mx-auto rounded-[10px] md:rounded-2xl p-4 md:p-8 shadow-input bg-black  border-stone-700 border-[1px]
+">
       <h2 className="font-bold text-xl metallic-text">
         Confirmation for payment
       </h2>

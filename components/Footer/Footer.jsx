@@ -27,10 +27,10 @@ function Footer() {
      </div>
      </div>
       <div className='flex flex-col gap-4 metallic-text max-767:text-center max-767:text-xl'>
-        <Link href='/'>Home</Link>
-        <Link href='/'>Pricing</Link>
-        <Link href='/'>Components</Link>
-        <Link href='/'>About Us</Link>
+        <Link href='/users/Privacy'>Privacy Policy</Link>
+        <Link href='/users/Refund'>Refund Policies</Link>
+        <Link href='/users/Terms'>Terms & Conditions</Link>
+        <Link href='/users/AboutUs'>About Us</Link>
       </div>
       <div className='flex flex-col gap-4'>
         <h1 className='metallic-text text-3xl max-767:text-center font-semibold'>Follow us on </h1>

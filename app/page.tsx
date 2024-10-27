@@ -57,7 +57,7 @@ export default function Page() {
       date: "28th March, 2023",
       title: "Fullstack Applications Development",
       description:
-        "Have a groundbreaking idea for a full-stack application but worried about costs? Let's bring your vision to life without breaking the bank! Connect with me, and we'll turn your concept into reality with minimal expenses.",
+        "Have a groundbreaking idea for a full-stack application but worried about costs? Let's bring your vision to life without breaking the bank! Connect with me, and we'll turn your concept into reality with minimal expenses within your budget.",
       image: "/demo/thumbnail.png",
       authorAvatar: "/manu.png",
     },
