@@ -12,26 +12,6 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/users/AboutUs/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/users/AboutUs/page.js"
-    ],
-    "/users/Refund/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/users/Refund/page.js"
-    ],
-    "/users/Terms/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/users/Terms/page.js"
-    ],
-    "/users/Privacy/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/users/Privacy/page.js"
-    ],
     "/users/contactus/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

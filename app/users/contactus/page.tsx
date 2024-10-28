@@ -18,9 +18,9 @@ export default function ContactUs() {
             We are always looking for ways to improve our products and services. Contact us and let us know how we can help you.
           </p>
           <div className="text-gray-400 space-y-2">
-            <p>contact@yoursaas.ai</p>
-            <p>+1 (800) 123 XX21</p>
-            <p>support@yoursaas.ai</p>
+            <p>calibertech875@gmail.com</p>
+            <p>+91 6382682378</p>
+            <p>13/73 Ganapathy Nagar, Salem Steel Plant, Salem 636030</p>
           </div>
         </div>
         <div className="mt-12">
@@ -31,7 +31,7 @@ export default function ContactUs() {
 
       {/* Right Section */}
       
-      <div className="md:w-1/2 bg-gray-900 p-8 md:p-16 rounded-3xl h-[90vh] mt-[3%]">
+      <div className="md:w-1/2 bg-gray-900 p-8 md:p-16 rounded-3xl h-[95vh] mt-[3%]">
         <form className="space-y-6">
           <div>
             <label htmlFor="fullName" className="block text-sm font-medium text-gray-400 mb-2">
