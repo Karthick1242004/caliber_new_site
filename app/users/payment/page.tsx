@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import Script from "next/script";
 import { SignupFormDemo } from "@/components/Form/Form";
-import Link from "next/link";
 import { FloatingNavDemo } from "@/components/Navbar/floatnavbarcomb";
+import { useRouter } from "next/navigation";
 
 declare global {
   interface Window {
@@ -14,6 +14,7 @@ declare global {
 const PaymentPage = () => {
   const AMOUNT = 100;
   const [isProcessing, setIsProcessing] = useState(false);
+  const router = useRouter();
 
   const handlePayment = async () => {
     setIsProcessing(true);
@@ -36,6 +37,7 @@ const PaymentPage = () => {
         order_id: data.orderId,
         handler: (response: any) => {
           console.log("Payment Successful", response);
+          router.push("/users/DownloadPage"); 
         },
         prefill: {
           name: "John",
@@ -59,13 +61,12 @@ const PaymentPage = () => {
     <div>
       <FloatingNavDemo />
       <Script src="https://checkout.razorpay.com/v1/checkout.js" />
-      <div className="h-[50rem] w-full bg-stone-900 bg-grid-white/[0.2]  relative flex items-center justify-center">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="h-[50rem] w-full bg-stone-900 bg-grid-white/[0.2] relative flex items-center justify-center">
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="relative z-20 border-white py-8">
           <SignupFormDemo handlePayment={handlePayment} isProcessing={isProcessing} />
         </div>
       </div>
-      
     </div>
   );
 };

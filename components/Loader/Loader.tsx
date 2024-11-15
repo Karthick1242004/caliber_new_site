@@ -3,6 +3,7 @@ import React from "react";
 import { MultiStepLoader as Loader } from "./multi-step-loader";
 
 const loadingStates = [
+  { text: "Site under maintenance" },
   { text: "Now , Say my name" },
   { text: "You are ' Heisenberg ' !" },
   { text: "You are goddamn right" },

@@ -1067,8 +1067,8 @@ video {
 .h-\[890px\] {
   height: 890px;
 }
-.h-\[90vh\] {
-  height: 90vh;
+.h-\[95vh\] {
+  height: 95vh;
 }
 .h-auto {
   height: auto;
@@ -1078,12 +1078,6 @@ video {
 }
 .h-px {
   height: 1px;
-}
-.h-\[9vh\] {
-  height: 9vh;
-}
-.h-\[95vh\] {
-  height: 95vh;
 }
 .min-h-\[250vh\] {
   min-height: 250vh;

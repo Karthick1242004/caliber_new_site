@@ -42,7 +42,7 @@ export default function ContactUs() {
               id="fullName"
               name="fullName"
               className="w-full bg-gray-800 rounded-lg border border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent px-4 py-3 text-white"
-              placeholder="Manu Arora"
+              placeholder="Karthick"
             />
           </div>
           <div>
@@ -54,7 +54,7 @@ export default function ContactUs() {
               id="email"
               name="email"
               className="w-full bg-gray-800 rounded-lg border border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent px-4 py-3 text-white"
-              placeholder="support@aceternity.com"
+              placeholder="calibertech875@gmail.com"
             />
           </div>
           <div>
@@ -66,7 +66,7 @@ export default function ContactUs() {
               id="company"
               name="company"
               className="w-full bg-gray-800 rounded-lg border border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent px-4 py-3 text-white"
-              placeholder="Aceternity Labs LLC"
+              placeholder="Caliber Tech"
             />
           </div>
           <div>
