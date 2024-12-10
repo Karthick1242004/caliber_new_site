@@ -12,7 +12,7 @@ const loadingStates = [
 export function MultiStepLoaderDemo({ loading }: { loading: boolean }) {
   return (
     <div className="w-full h-[60vh] flex items-center justify-center">
-      <Loader loadingStates={loadingStates} loading={loading} duration={1800} />
+      <Loader loadingStates={loadingStates} loading={loading} duration={1200} />
     </div>
   );
 }
