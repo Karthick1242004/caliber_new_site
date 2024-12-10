@@ -51,7 +51,7 @@ const PaymentPage = () => {
       const data = await response.json();
       const options = {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
-        amount: card.amount * 100,
+        amount: card.amount * 1000,
         currency: "INR",
         name: "Your Company Name",
         description: card.projectName,
