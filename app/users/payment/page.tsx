@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import { useRouter } from "next/navigation";
 import Script from "next/script";
 import { CardBody, CardContainer, CardItem } from "../componentsPage/3d-card";
 import { FloatingNavDemo } from "@/components/Navbar/floatnavbarcomb";
-import { AlertCircle } from 'lucide-react';
+import { AlertCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams } from "next/navigation";
 import "./payment.page.css";
 
 declare global {
@@ -17,9 +17,9 @@ declare global {
   }
 }
 
-const PaymentPage = () => {
+const PaymentPageContent = () => {
   const searchParams = useSearchParams();
-  const cardParam = searchParams.get('card');
+  const cardParam = searchParams.get("card");
   const card = cardParam ? JSON.parse(decodeURIComponent(cardParam)) : null;
 
   const [isProcessing, setIsProcessing] = useState(false);
@@ -59,7 +59,9 @@ const PaymentPage = () => {
         handler: (response: any) => {
           console.log("Payment Successful", response);
           router.push(
-            `/users/DownloadPage?downloadUrl=${encodeURIComponent(card.downloadUrl || "")}`
+            `/users/DownloadPage?downloadUrl=${encodeURIComponent(
+              card.downloadUrl || ""
+            )}`
           );
         },
         prefill: {
@@ -71,7 +73,7 @@ const PaymentPage = () => {
           color: "#3399cc",
         },
       };
-      console.log(card.amount)
+      console.log(card.amount);
       const rzp1 = new window.Razorpay(options);
       rzp1.open();
     } catch (error) {
@@ -87,10 +89,12 @@ const PaymentPage = () => {
       <Script src="https://checkout.razorpay.com/v1/checkout.js" />
       <div
         className="payment-background relative"
-        style={{ backgroundImage: `url(${card.projectImage?.src || "/default-image.png"})` }}
+        style={{
+          backgroundImage: `url(${card.projectImage?.src || "/default-image.png"})`,
+        }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/50" />
-        
+
         <div className="relative w-full lg:w-1/2 flex flex-col justify-end min-h-screen p-8 lg:p-10 gap-6">
           <div className="space-y-2">
             <h1 className="metallic-text text-4xl lg:text-5xl font-bold tracking-tight">
@@ -105,19 +109,23 @@ const PaymentPage = () => {
             <div className="flex items-start gap-3 text-white/80">
               <AlertCircle className="w-5 h-5 mt-0.5 flex-shrink-0 text-amber-400" />
               <div className="space-y-2 text-sm">
-                <p className="font-medium text-white">Important Payment Information</p>
+                <p className="font-medium text-white">
+                  Important Payment Information
+                </p>
                 <p>
-                  Payment cancellations can only be verified manually. If payment is successful and the file is downloaded, 
-                  the payment cannot be refunded. If payment is successful but the file is not downloaded, 
-                  please follow the steps provided on the download page to resolve the issue.
+                  Payment cancellations can only be verified manually. If
+                  payment is successful and the file is downloaded, the payment
+                  cannot be refunded. If payment is successful but the file is
+                  not downloaded, please follow the steps provided on the
+                  download page to resolve the issue.
                 </p>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link 
-              href={card.projectUrl}  
+            <Link
+              href={card.projectUrl}
               className="group flex items-center justify-center gap-2 px-6 py-3 
                 bg-white/5 hover:bg-white/10 
                 backdrop-blur-md 
@@ -128,22 +136,22 @@ const PaymentPage = () => {
                 hover:scale-[1.02] hover:border-white/20"
             >
               <span className="metallic-text">View Site</span>
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" 
-                fill="none" 
-                viewBox="0 0 24 24" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                 />
               </svg>
             </Link>
-            
+
             <button
               onClick={handlePayment}
               disabled={isProcessing}
@@ -163,21 +171,38 @@ const PaymentPage = () => {
                 <>
                   <span>Processing...</span>
                   <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"/>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                      fill="none"
+                    />
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    />
                   </svg>
                 </>
               ) : (
                 <>
                   <span className="metallic-text">Pay ₹{card.amount}</span>
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 transition-transform duration-300 group-hover:scale-110"
+                    fill="none"
+                    viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
                   </svg>
                 </>
               )}
@@ -189,5 +214,10 @@ const PaymentPage = () => {
   );
 };
 
-export default PaymentPage;
+const PaymentPage = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <PaymentPageContent />
+  </Suspense>
+);
 
+export default PaymentPage;

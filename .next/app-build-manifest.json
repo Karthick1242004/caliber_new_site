@@ -1,10 +1,9 @@
 {
   "pages": {
-    "/users/payment/page": [
+    "/users/DownloadPage/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/users/payment/page.css",
-      "static/chunks/app/users/payment/page.js"
+      "static/chunks/app/users/DownloadPage/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -12,15 +11,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/users/componentsPage/page": [
+    "/users/payment/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/users/componentsPage/page.js"
+      "static/css/app/users/payment/page.css",
+      "static/chunks/app/users/payment/page.js"
     ],
-    "/users/DownloadPage/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/users/DownloadPage/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
