@@ -9,7 +9,7 @@ const cardData = [
       projectImage: threeDPortfolio,
       projectUrl: "https://karthickrajans.vercel.app/",
       amount: 3999,
-      downloadUrl: "https://drive.usercontent.google.com/download?id=1oALLozPaQlT-p9JFhwIykZa4zN5tngg5&export=download&authuser=0",
+      downloadUrl: "https://drive.usercontent.google.com/download?id=1oALLozPa1QlT-p9JFhwIykZa4zN5tngg5&export=download&authuser=0",
   },
   {
       projectName: "Bento Grid Portfolio",
@@ -18,9 +18,11 @@ const cardData = [
       projectImage: bentoFolio,
       projectUrl: "https://kanisha.vercel.app/",
       amount: 4999,
-      downloadUrl: "https://drive.usercontent.google.com/download?id=1XWG1U7KkvZO0h96A3v7Q7_AHGj1SlxM7&export=download&authuser=0",
+      downloadUrl: "https://drive.usercontent.google.com/download?id=1XW1G1U7KkvZO0h96A3v7Q7_AHGj1SlxM7&export=download&authuser=0",
   },
 ];
 export default cardData;
 
 
+// Actual_downloadUrl1: "https://drive.usercontent.google.com/download?id=1oALLozPaQlT-p9JFhwIykZa4zN5tngg5&export=download&authuser=0",
+// Actual_downloadUrl2: "https://drive.usercontent.google.com/download?id=1XWG1U7KkvZO0h96A3v7Q7_AHGj1SlxM7&export=download&authuser=0",
