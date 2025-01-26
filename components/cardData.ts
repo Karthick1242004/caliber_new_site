@@ -17,7 +17,7 @@ const cardData = [
       projectContent: "Who doesn't like a Bento Grid? A portfolio in Bento Grid is the next thing—simple and minimalistic for a unique design and a quick review of your work, as well as about you and your amazing career so far.",
       projectImage: bentoFolio,
       projectUrl: "https://kanisha.vercel.app/",
-      amount: 3999,
+      amount: 4999,
       downloadUrl: "https://drive.usercontent.google.com/download?id=1XWG1U7KkvZO0h96A3v7Q7_AHGj1SlxM7&export=download&authuser=0",
   },
 ];
