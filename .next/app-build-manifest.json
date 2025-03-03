@@ -17,6 +17,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/users/componentsPage/page.js"
     ],
+    "/users/contactus/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/users/contactus/page.js"
+    ],
+    "/users/AboutUs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/users/AboutUs/page.js"
+    ],
     "/users/payment/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
